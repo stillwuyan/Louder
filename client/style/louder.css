@@ -1,0 +1,57 @@
+div#main {
+  height: 720px;
+}
+
+div#main div {
+  border: 1px groove;
+  border-radius: 5px;
+  padding-left: 1px;
+}
+
+div#header {
+  background-color: rgb(182,182,182);
+  height: 6%;
+}
+div#header p {
+  margin: 2px;
+  padding: 2px;
+  text-align: center;
+  font-family: Cursive;
+  text-shadow: 3px 3px 3px #FF00FF;
+}
+
+div#board {
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: lightblue;
+  height: 80%;
+  word-break: break-all;
+}
+div#board p {
+  margin: 0;
+  padding-left: 5px;
+}
+div#board b {
+  color: blue;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+div#notepad {
+  height: 14%;
+}
+textarea#message {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 100%;
+  width: 83%;
+  overflow: hidden;
+}
+button#send {
+  float: right;
+  position: relative;
+  width: 17%;
+  height: 100%;
+}

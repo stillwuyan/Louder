@@ -2,24 +2,24 @@
   <head>
     <title>HTML Application Sample</title>
     <meta http-equiv="x-ua-compatible" content="ie=9">
-    <hta:application 
-       id="oSample"
-       applicationname="sample1"
-       version="1"
-    </hta>
-    <link rel="stylesheet" type="text/css" href="style/mystyle.css">
+    <hta:application id="oSample" applicationname="sample1" version="1"></hta>
+    <link rel="stylesheet" type="text/css" href="style/louder.css">
+    <script src="script/jquery-2.1.4.js"></script>
     <script>
       window.resizeTo(550, 800);
     </script>
   </head>
   <body>
     <div id="main">
+      <div id="header">
+        <p id="user">guest</p>
+      </div>
       <div id="board"></div>
       <div id="notepad">
         <textarea id="message" maxlength="200" autofocus="autofocus"></textarea>
         <button id="send" type="button" onclick="sendMessage()">send</button>
       </div>
     </div>
-    <script src="script/myscript.js"></script>
+    <script src="script/utilities.js"></script>
   </body>
 </html>
