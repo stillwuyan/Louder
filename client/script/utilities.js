@@ -43,7 +43,7 @@ function appendMessage(user, msg) {
 
 function hotKey() {
     var key = window.event.keyCode;
-    if ((key == 13) && (event.altKey)) {
+    if ((event.altKey) && (key == 13)) {
         sendMessage();
     }
 }
@@ -61,12 +61,20 @@ function changeName() {
     input = $("div#header #user input");
     input.val(name);
     input.select();
-    input.focusout(function(){
-        name = (input.val() == '' ? name : input.val());
+    input.keydown(function() {
+        var key = window.event.keyCode;
+        if ( key == 13 ) {
+            name = (input.val() == '' ? name : input.val());
+            input.remove();
+            user.text(name);
+        }        
+    });
+    input.focusout(function() {
         input.remove();
-        user.text(name);
+        user.text(name);        
     });
 }
+
 $(document).ready(function(){
     $(document).keydown(hotKey);
     $("div#header #user").dblclick(changeName);

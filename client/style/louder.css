@@ -1,5 +1,5 @@
 div#main {
-  height: 720px;
+  height: 600px;
 }
 
 div#main div {
@@ -10,14 +10,22 @@ div#main div {
 
 div#header {
   background-color: rgb(182,182,182);
-  height: 6%;
+
 }
 div#header p {
-  margin: 2px;
-  padding: 2px;
+  margin: 0;
+  padding: 0;
+  border: 0;
   text-align: center;
   font-family: Cursive;
   text-shadow: 3px 3px 3px #FF00FF;
+}
+div#header p input{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  font-family: Cursive;
 }
 
 div#board {
